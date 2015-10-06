@@ -1,4 +1,10 @@
 # BalanceSpan
+`BalanceSpan` is an algorithm designed to extract frequent patterns (strategies) from StraCraft II replays. It computes a measure that evaluate the balance of a strategy, i.e. if the strategy is likely to win or to loose. BalanceSpan allows the user to identify some imbalanced strategies.
+`BalanceSpan` is based on the PrefixSpan framework that only extracts frequent pattern from a set of sequences.
+For further information about aims of `BalanceSpan`, please go to ...
+
+
+
 ReadMe BalanceSpan.
 
 The "algo" folder contains the source code of the BalanceSpan algorithm:
