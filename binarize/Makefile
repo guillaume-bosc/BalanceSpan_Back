@@ -1,6 +1,6 @@
 all   : bin/Binarize
 
-bin/Binarize : src/Binarisateur.cpp
+bin/Binarize : src/binarisateur.cpp
 	g++ -m32 -O3 -o ./Binarize src/*.cpp
 
 clean :
