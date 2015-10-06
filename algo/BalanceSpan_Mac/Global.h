@@ -81,7 +81,7 @@ inline void* memalloc(size_t nSize){
 	if (nSize>0) {
 		mem=malloc(nSize);
 		if (mem==0){
-			fprintf(gpErrFile, "Fail to allocate memory with size %i\n", nSize);
+			fprintf(gpErrFile, "Fail to allocate memory with size %lu\n", nSize);
 			exit(-1);
 		}
 	}

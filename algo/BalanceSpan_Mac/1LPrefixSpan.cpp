@@ -224,11 +224,11 @@ int main(int argc, char** argv) {
 		gpErrFile = file_open(ERRFILE, "w");
 		if (gpErrFile != NULL) {
 			fprintf(gpErrFile,
-					"Usage: 1LPrefixSpan <filename> <support> <itemcount> <dictionary_file>\n");
+					"Usage: BalanceSpan <filename> <support> <itemcount> <dictionary_file>\n");
 			fclose(gpErrFile);
 		}
 		printf(
-				"Usage: 1LPrefixSpan <filename> <support> <itemcount> <dictionary_file>\n");
+				"Usage: BalanceSpan <filename> <support> <itemcount> <dictionary_file>\n");
 		exit(-1);
 	}
 
@@ -349,7 +349,7 @@ int main(int argc, char** argv) {
 	 closed_maxPruning((*it), root);
 	 }*/
 	FILE *closed_maxFile = NULL;
-	closed_maxFile = file_open("ClosedMaxset.txt", "w");
+	closed_maxFile = file_open("result.txt", "w");
 
 	for (it = root->Children->begin(), endit = root->Children->end();
 			it != endit; it++) {

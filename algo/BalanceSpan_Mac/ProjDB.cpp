@@ -584,7 +584,7 @@ void PrintProjDBs(const struct PROJ_DB *proj_db, const int nCount) {
 		printf("\n ");
 
 		printf(
-				"NumOfItems = %d m_nSupport= %d  maxSupport= %d totalmem= %d maxmem= %d\n",
+				"NumOfItems = %lu m_nSupport= %d  maxSupport= %d totalmem= %d maxmem= %d\n",
 				proj_db[i].NumOfItems, proj_db[i].m_nSup, proj_db[i].m_nMaxSup,
 				n_total_mem, n_max_mem);
 
