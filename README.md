@@ -20,11 +20,21 @@ This part details the process to run *BalanceSpan*.
 
 1. **Compile *BalanceSpan*.**
 Depending on the OS you are, we provide you a version dedicated to Linux users, or to Mac users. You can find these versions in the "algo" folder. Each of these versions include a makefile to compile the sources. To compile it just execute the following command line:
-`make ...` within the ... folder.
+`make` within the folder of the desired algorithm: BalanceSpan_Linux or BalanceSpanMac. It will create the executable BalanceSpan in the folder "algo".
 
-2. **Binarize data.** If you do not use the ata we provide, and you want to experiment on your own data, you should binarize you data. Indeed, *BalanceSpan* requires binarized data to run. We provide a simple algorithm to easily binarize data. Use it as follows : `binarize ...`
+2. **Binarize data.** If you do not use the ata we provide, and you want to experiment on your own data, you should binarize you data. Indeed, *BalanceSpan* requires binarized data to run. We provide a simple algorithm to easily binarize data. With a terminal go into the binarize folder, compile with the command line `make` and run it with `./Binarize <filename>`. It will produce a new binarized file named filename.bin. 
+Note that your data file has to be encoded in a certain way: 
+  - each sequence is written on a single line
+  - each itemset of the sequence ends by -1
+  - each sequence ends by -2
+  - each item is a number between 0 and the number of different items minus 1
 
-3. **Run *BalanceSpan*.** Once you've compiled *BalanceSpan* and your data is binarized, you are ready to run it on this data. To do that, you can have a look at the script we provide as an example. *BalanceSpan* requires several parameters to be launched. The prototype of the command line is as follows: `./BalanceSpan ...`
+3. **Run *BalanceSpan*.** Once you've compiled *BalanceSpan* and your data is binarized, you are ready to run it on this data. To do that, you can have a look at the script we provide as an example in the folder "script". *BalanceSpan* requires several parameters to be launched. The prototype of the command line is as follows: `./BalanceSpan <filename> <support> <itemcount> <dictionnary_file>`. Here, we explain these parameters:
+  - <filename> is the path to the data binarized file.
+  - <support> is the value of the threshold for the support. It is a double included in 0 and 1.
+  - <itemcount> is the number of different items in your data.
+  - <dictionnary_file> is the path to the dictionnary file, for the mapping.
+Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors.
 
 4. **Get the results.**
 
