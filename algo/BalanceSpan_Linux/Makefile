@@ -1,8 +1,8 @@
-all   : bin/PrefixSpan
+all   : bin/BalanceSpan
 
-bin/PrefixSpan : *.cpp SeqTree/*.cpp *.h *.h
-	g++ -m32 -O3 -o ../PrefixSpan *.cpp SeqTree/*.cpp
+bin/BalanceSpan : *.cpp SeqTree/*.cpp *.h *.h
+	g++ -Wno-write-strings -m32 -O3 -o ../BalanceSpan *.cpp SeqTree/*.cpp
 
 clean :
-	rm -Rf bin/* www/webtest.* www/scheduler.* www/frequent.dat www/error.tmp
+	rm -Rf bin/* 
 
