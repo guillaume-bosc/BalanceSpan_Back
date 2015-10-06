@@ -1,4 +1,4 @@
-http://guillaume-bosc.github.io/BalanceSpan_Back/
+# BalanceSpan
 ReadMe BalanceSpan.
 
 The "algo" folder contains the source code of the BalanceSpan algorithm:
