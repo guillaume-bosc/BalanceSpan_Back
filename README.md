@@ -30,14 +30,12 @@ Note that your data file has to be encoded in a certain way:
   - each item is a number between 0 and the number of different items minus 1
 
 3. **Run *BalanceSpan*.** Once you've compiled *BalanceSpan* and your data is binarized, you are ready to run it on this data. To do that, you can have a look at the script we provide as an example in the folder "script". *BalanceSpan* requires several parameters to be launched. The prototype of the command line is as follows: `./BalanceSpan <filename> <support> <itemcount> <dictionnary_file>`. Here, we explain these parameters:
-  - <filename> is the path to the data binarized file.
-  - <support> is the value of the threshold for the support. It is a double included in 0 and 1.
-  - <itemcount> is the number of different items in your data.
-  - <dictionnary_file> is the path to the dictionnary file, for the mapping.
-Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors.
-
-4. **Get the results.**
+  - `<filename>` is the path to the data binarized file.
+  - `<support>` is the value of the threshold for the support. It is a double included in 0 and 1.
+  - `<itemcount>` is the number of different items in your data.
+  - `<dictionnary_file>` is the path to the dictionnary file, for the mapping.
 
 
+4. **Get the results.** Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors. 
 
 For any questions/remarks, contact Guillaume BOSC: guillaume.bosc@insa-lyon.fr
