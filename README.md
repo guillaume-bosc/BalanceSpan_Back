@@ -39,3 +39,5 @@ Note that your data file has to be encoded in a certain way:
 4. **Get the results.** Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors. 
 
 For any questions/remarks, contact Guillaume BOSC: guillaume.bosc@insa-lyon.fr
+
+[![DOI](https://zenodo.org/badge/18678/guillaume-bosc/BalanceSpan_Back.svg)](https://zenodo.org/badge/latestdoi/18678/guillaume-bosc/BalanceSpan_Back)
